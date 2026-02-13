@@ -38,3 +38,13 @@ jobs:
     steps:
       - name: Write Back
         run: echo "Escribiendo resultado en registro." && sleep 3
+
+AD:
+  needs: WB
+  runs-on: ubuntu-latest
+  steps:
+    - name: Memory 
+    run: echo "Memoria" && sleep 3
+    
+    
+  
